@@ -20,6 +20,10 @@ function App() {
             <li>Feed the dogs</li>
           </ul>
         </div>
+        <div>
+          <iframe src="https://www.youtube.com/embed/CRfJyDDsH5U?mute=1&autoplay=1" width="100%" height="100%" frameborder="0" allow="autoplay; encrypted-media">
+          </iframe>
+        </div>
       </body>
     </div>
   );
