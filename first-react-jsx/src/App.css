@@ -31,10 +31,44 @@
 }
 
 .App-body>div {
-  width: 500px;
+  width: 600px;
+  height: 100%;
   margin: 20px auto;
-  font-size: calc(5px + 2vmin);
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.App-body>div:first-child>div:nth-child(2) {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(253, 253, 253, 0.85);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-even;
+  /* font-size: 0.85em; */
+  font-size: medium;
+  font-weight: bold;
+  color: black;
+}
+
+.App-body>div:first-child>div:nth-child(2)>* {
+  margin: 10px;
+}
+
+.App-body>div:first-child img {
+  width: 30px;
+}
+
+.App-body>div>* {
+  margin: 20px auto;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: white;
+  font-size: calc(5px + 2vmin);
 }
 
 @keyframes App-logo-spin {
@@ -46,7 +80,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .App-body {
     flex-direction: column;
     align-items: center;
