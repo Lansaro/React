@@ -28,7 +28,7 @@
   flex-direction: row;
 }
 
-.App-body > div {
+.App-body>div {
   width: 48%;
   margin: 20px;
   height: 600px;
