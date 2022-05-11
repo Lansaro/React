@@ -9,8 +9,7 @@ const Beatle = (props) => {
         <div>
             <p onClick={() => console.log('name was clicked')}>Name: {props.name}</p>
             <p onClick={clickHandler}>Instrument: {props.instrument}</p>
-            <p>Likes: {nLikes}</p>
-            <button onClick={() => setNLikes(nLikes + 1)}>+ Likes</button>
+            <p>Likes: {nLikes} <button onClick={() => setNLikes(nLikes + 1)}>+ Like</button></p>
             <p>Writes Music: {props.writesMusic ? <p>YES</p> : <p>NO</p>}</p>
             <hr />
         </div>

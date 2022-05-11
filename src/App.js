@@ -37,20 +37,26 @@ function App() {
   }
   return (
     <div className="App">
-      <body>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1>First React with JSX</h1>
+      </header>
+      <body className="App-body">
         <div>
           <h2>Counter: {counter}</h2>
           <button onClick={() => setCounter(counter + 1)}>Increment</button>
           <button onClick={decreaseCounter}>Decrement</button>
         </div>
-        {beatles.map((beatle, index) => {
-          return (
-            <Beatle
-              name={beatle.name}
-              instrument={beatle.instrument}
-              likes={beatle.like}
-              writesMusic={beatle.writesMusic}/>)
-        })}
+        <div>
+          {beatles.map((beatle, index) => {
+            return (
+              <Beatle
+                name={beatle.name}
+                instrument={beatle.instrument}
+                likes={beatle.like}
+                writesMusic={beatle.writesMusic}/>)
+          })}
+        </div>
       </body>
     </div>
   );
