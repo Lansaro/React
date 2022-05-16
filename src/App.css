@@ -1,9 +1,9 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -13,26 +13,87 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: calc(3px + 2vmin);
+  color: white;
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 700px;
+  background-image: url(./components/backgroundImage.png);
+}
+
+.App-body>form {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  width: 700px;
+  height: 600px;
+  margin: 20px auto;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.App-body>form>div {
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  width: 100%;
+  height: 50px;
+}
+
+.App-body>form>div>* {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.App-body>form>p {
+  margin-top: 0px;
+  margin-left: 10px;
+  font-size: calc(1px + 2vmin);
+  font-weight: bold;
+  color: red;
+}
+
+.App-body>form>div>input {
+  width: 275px;
+  height: 30px;
+  font-size: calc(5px + 2vmin);
+}
+
+.App-body>form>div>input:nth-child(4) {
+  -Webkit-text-security: disc;
+}
+
+.App-body>form>div>input:nth-child(5) {
+  -Webkit-text-security: disc;
+}
+
+.App-body>form>button {
+  width: 150px;
+  height: 45px;
+  margin: 10px auto;
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
 }
