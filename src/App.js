@@ -42,7 +42,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>CRUD</h1>
       </header>
-      <body className="App-body">
+      <div className="App-body">
         <form onSubmit={handleSubmitSkill}>
           <div>
             Skill Name:
@@ -63,8 +63,8 @@ function App() {
             <button onClick={() => handleDeleteSkill(index)}>Delete</button>
             <hr />
           </div>
-        })};
-      </body>
+        })}
+      </div>
     </div>
   );
 }
