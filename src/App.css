@@ -1,9 +1,9 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -13,26 +13,74 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: calc(3px + 2vmin);
+  color: white;
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-body>form {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  min-height: 50px;
+  margin: 10px auto;
+  border-radius: 10px;
+  background-color: rgba(100, 100, 100, 0.75);
+}
+
+.App-body>form>* {
+  margin: 20px;
+  font-weight: bold;
+  font-size: calc(5px + 2vmin);
+}
+
+.App-body>form>input {
+  width: 450px;
+}
+
+.App-body>form>button {
+  width: 150px;
+  height: 25px;
+}
+
+.App-body>div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 10px auto;
+  color: white;
+  font-weight: bold;
+}
+
+.App-body>div>div {
+  width: 250px;
+  min-height: 100px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: rgba(100, 100, 100, 0.75);
+}
+
+.App-body>div>div>*{
+  margin: 10px;
 }
