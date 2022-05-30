@@ -1,9 +1,9 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -13,26 +13,64 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: calc(3px + 2vmin);
+  color: white;
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./components/backgroundImage.jpeg);
+}
+
+.App-body>div>div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 10px auto;
+  color: white;
+  font-weight: bold;
+}
+
+.App-body>div>button {
+  display: flex;
+  margin: 10px auto;
+  background-color: lightblue;
+  height: 35px;
+  width: 150px;
+  border-radius: 10px;
+
+}
+
+.App-body>div>div>div {
+  width: 23%;
+  min-height: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.App-body>div>div>div>p:nth-child(2) {
+  font-size: calc(3px + 1vmin);
+}
+
+.App-body>div>div>div>* {
+  margin: 10px;
 }
