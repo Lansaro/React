@@ -1,23 +1,48 @@
 import logo from './logo.svg';
 import './App.css';
+import PersonCard from './components/PersonCard';
 
 function App() {
+  const users = [
+    {
+      firstName: "Jane",
+      lastName: "Doe",
+      age: 45,
+      hairColor: "Black"
+    },
+    {
+      firstName: "John",
+      lastName: "Smith",
+      age: 88,
+      hairColor: "Brown"
+    },
+    {
+      firstName: "Millard",
+      lastName: "Fillmore",
+      age: 50,
+      hairColor: "Brown"
+    },
+    {
+      firstName: "Maria",
+      lastName: "Smith",
+      age: 62,
+      hairColor: "Brown"
+    }
+  ]
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Prop it up</h1>
       </header>
+      <div className="App-body">
+        {users.map((user, index) => {
+          return (
+            <div key={index}>
+              <PersonCard props = { user } />
+            </div>
+        )})}
+      </div>
     </div>
   );
 }
